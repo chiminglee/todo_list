@@ -11,6 +11,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['id'])) {
 
     echo "任務已刪除。";
 }
-
-
 ?>

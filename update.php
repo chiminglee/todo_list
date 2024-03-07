@@ -10,8 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['id'])) {
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['task' => $task, 'is_completed' => $is_completed, 'id' => $id]);
 
-    echo "任務已更新。您將在5秒後回首頁。";
-    header("refresh:5;url=list_tasks.php");
+    echo "待辦事項已更新。您將在5秒後回首頁。";
+    header("refresh:5;url=index.php");
     exit;
 }
 ?>
